@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Experinces</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/exp.css">
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <div class="nav" id="nav">
+        <ul class="nav nav-pills nav-justified">
+          <li><a href="index.html">个人介绍</a></li>
+          <li><a href="cv.html">学校与实习经历</a></li>
+          <li class="active"><a href="exp.html">项目经历</a></li>
+          <li><a href="contact.html">联系方式</a></li>
+        </ul>
+    </div>
+    <div class="page-header">
+        <h1 id="timeline">个人经历</h1>
+    </div> 
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-user"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">TCM用户信息录入系统</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>07/2015-至今</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>TCM（全称为Target Case Management）是美国费城市政府DBHIDS部门长期负责的一个项目，其主要职能是对街上的流浪人员进行信息统计，以方便政府人员对他们进行统一的救助与管理。其中的用户信息录入系统，则是用于对目标人员的信息记录与查询。本系统直接与DBHIDS的后台数据库相连接，通过输入相应的标准，工作人员还可以对数据库中的数据进行查询。我在本项目中主要负责用户界面的设计，以及通过JavaScript以及HTML/CSS对前端界面进行编程。</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Twitter文字数据挖掘</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>03/2015-06/2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>我做为本项目的负责人，与另外两位同学一起，通过对美国流行的社交网站Twitter上的用户数据（以用户发布的推文为主）进行分析，从而对当今主要的公开课网站之一Coursera的课程受欢迎程度进行了调查与研究，并最终对未来的课程流行趋势进行了预测。在本次项目中，我们首先使用了Twitter的Streaming API获取近三个月以来的推文数据以及用户信息，并通过Python对数据进行了清理。根据着相应关键词出现的频率，我们使用自己编写的程序对上万推文进行了相关性分析，接着用K-means算法对推文进行了分类，最终通过各个课程获得的加权分数（包括相关度，用户影响力），得出了近期的热门课程。通过这些热门课程所对应的学科，我们进一步得到了各个领域的学习趋势。</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">奥赛罗AI设计</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>01/2015-03/2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>本项目的目的，旨在对奥赛罗（一款经典的电脑游戏）的AI进行编程，从而比较不同算法在处理相应问题时的表现。我通过Java语言，分别使用Minimax，Monte Carlo树搜索对AI进行编程，并比较了这两种算法在不同搜索深度，是否使用Alpha-Beta prunning下的运行事件以及获胜概率，并最终发现Monte Carlo树搜索在处理此类问题时的巨大优势。</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">网页安全与防护</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>09/2014-01/2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>本项目旨在对给定的交互式网站进行安全分析，并提出相应的改进措施。通过分析代码，并进行相应测试，我首先发现该网站有受到CSRF攻击的可能，并通过CSRF token，以及使用XMLHttpRequest的方式对每次网站发送的数据进行验证，从而对该网站的漏洞进行了改进，获得了很好的成绩。</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">智能家庭系统</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>07/2013-09/2013</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>作为项目负责人，在刘绍华副教授的指导下，与另外六名同学一起，利用Zigbee作为无线通信协议，通过对Z-stack协议栈的编程，对不同节点传感器的数据进行处理，并设置了相应的响应方式。最终，我们成功完成了对实验室内部的光线，温度，二氧化碳浓度等信息的监测，并通过控制相应电器电路，对室内环境进行了优化。</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">论文审核系统</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>03/2013-06/2013</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>作为项目负责人，与其他8名同学一起，利用Java语言，完成了会议论文审核系统的开发。在项目的最开始，我首先带领大家对项目需求以及所需资源进行了分析，并对我们的时间安排进行了严格规划（包括各个阶段的设置，以及甘特图的绘制），同时也确立了我们的瀑布型开发架构。通过对用例图的讨论与分析，我们最终完成了软件的开发，并对系统进行了全面的测试。最终获得了客户认可。</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <a href="#nav">
+      <button type="button" class="btn btn-success btn-block" class="button">返回顶部</button>
+    </a>
+  </div>
+</div>
+</body>
+</html>

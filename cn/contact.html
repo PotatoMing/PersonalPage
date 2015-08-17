@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact me</title>
+  		<meta charset="UTF-8">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="css/main.css">
+  		<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=EFABZ-C6A34-RPXU5-DJJHU-HBGH7-PNFFG"></script>
+  		<script>
+  			function sendMail(){
+  				var email = "dong_mc@yeah.net";
+  				var subject = document.getElementById("subject").value;
+  				var body = document.getElementById("content").value+"--Sent from: "+document.getElementById("username").value;
+  				var link = "mailto:"+email+"?cc= &subject="+escape(subject)+"&body="+escape(body);
+  				window.location.href = link;
+  			}
+  			function initialize() {
+  				var myCenter = new qq.maps.LatLng(39.9500,-75.1667);
+  				var mapProp = {
+  					mapTypeId:qq.maps.MapTypeId.ROADMAP,
+    				center:myCenter,
+    				zoomLevel:7
+  				};
+  				var map=new qq.maps.Map(document.getElementById("qqMap"),mapProp);
+  				var marker=new qq.maps.Marker({
+  					position:myCenter,
+  					animation:qq.maps.MarkerAnimation.BOUNCE,
+  					map:map
+  				});
+			}
+			window.onload=initialize;
+  		</script>
+	</head>
+	<body>	
+		<div class="container">
+			<div class="content">
+				<nav class="nav">
+					<ul class="nav nav-pills nav-justified">
+						<li><a href="index.html">个人介绍</a></li>
+						<li><a href="cv.html">学校与实习经历</a></li>
+						<li><a href="exp.html">项目经历</a></li>
+						<li class="active"><a href="contact.html">联系方式</a></li>
+					</ul>
+				</nav>
+				<div class="page-header">
+					<h1>联系方式</h1>
+				</div>
+				<div class=row>
+					<div class="col-md-6">
+						<form class="form-inline" role="form">
+							<div class="form-group">
+								<label class="sr-only" for="name">Name:</label>
+								<input type="text" class="form-control" id="username" placeholder="请输入您的姓名">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="name">Subject:</label>
+								<input type="text" class="form-control" id="subject" placeholder="请输入您的主题">
+							</div>
+						</form>
+						<textarea class="form-control" rows="5" id="content" placeholder="请输入您的文字内容。。。"></textarea>
+						<button type="button" class="btn btn-primary btn-lg" onclick=sendMail()>提交</button>
+					</div>
+					<div class="col-md-6">
+						<p>电子邮箱：dongmingchuan@gmail.com</p>
+						<p>个人电话:（+1）215-605-8058</p>
+						<p>邮寄地址：412 N Wiota St APT 2, Philadelphia, PA, 19104</p>
+					</div>
+				</div>
+				<div id="qqMap"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Index</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<script>
+		window.onload = function(){
+			var time = new Date();
+			var greetings = document.getElementById("greetings");
+			var hours = time.getHours();
+			if(hours>=6&&hours<=11){
+				greetings.innerHTML = "张开双臂，拥抱每一个充满希望的早晨";
+			}else if(hours>=12&&hours<=3){
+				greetings.innerHTML = "午后的阳光明媚，有清丽的风闲闲吹过";
+			}else {
+				greetings.innerHTML = "每一天：伴着美梦入睡，带着目标醒来";
+			}
+		}
+	</script>
+	<body>
+		<div class="container">
+			<div class="content">
+				<nav class="nav">
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="index.html">个人介绍</a></li>
+						<li><a href="cv.html">学校与实习经历</a></li>
+						<li><a href="exp.html">项目经历</a></li>
+						<li><a href="contact.html">联系方式</a></li>
+					</ul>
+				</nav>
+				<div class="jumbotron">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/ming.jpg" class="img-circle" style="width:150px;height=200px;">
+						</div>
+						<div class="col-md-8">
+							<h2 id="greetings"></h2><br>
+							<a href="download/CV.pdf" target="__blank">
+							<button type="button" class="btn btn-success btn-md">下载我的简历</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<hr class="divider">
+				<div class="about-me">
+					<p>您好！我的名字叫董明川，目前就读于位于美国费城的德雷塞尔大学（2015US News计算机工程排名全美第53名），专业是网络安全。在学校的学习与研究中，我发现了我对网页开发的极大兴趣，从此下定决心，向着一名优秀的前端工程师努力着。</p>
+					<p>还记得我还在上小学的时候，我最大的兴趣就是用FrontPage制作个人网页。在那时，一个个简单的超链接就能让我兴奋不已。如今，我们已经步入了Web3.0的时代，随着HTML5,CSS3以及JavaScript等等技术的越发强大，我更加坚信自己正朝着一条正确的道路前进。更加流畅与智能的网页，也终将给人们生活带来更多的便利。我也希望，能够在学成之时，回到我的国家，将我在安全技术与英语方面的特长，与网站开发技术紧密结合，为中国互联网的发展，贡献自己的一份力量。</p>
+				</div>
+
+				<div class="learn-more">
+					<div class="row">
+						<div class="col-md-3">
+							<h3>书籍</h3>
+							<p>平时除了编程以外，我也很喜欢看一些历史与文化方面的书籍。因为从小就对历史很感兴趣，再加上到了国外，可以接触到更多有趣的资料，我开始慢慢地很想知道中国人、亚洲人在欧美人眼里，到底是一个什么样的形象。《菊与刀》和《雪狮与龙》都是我非常喜欢的作品。</p>
+						</div>
+						<div class="col-md-3">
+							<h3>电影</h3>
+							<p>每周五是我的“电影之夜”（这一天图书馆只开到8点：D），这也是一周里面最能让我放松的时刻。我比较喜欢的类型是恐怖片，战争片还有剧情片。最喜欢的要属《教父》系列了，因为我发现随着年龄的增长，对这部影片的理解也会越发的不同。</p>
+						</div>
+						<div class="col-md-3">
+							<h3>体育</h3>
+							<p>说起我的兴趣爱好当然不能不提到足球，每周末，能够和来自不同国家的同学们一起踢球，感受来自不同国家的足球文化以及他们对足球的狂热，是一件十分幸福的事情。</p>
+						</div>
+						<div class="col-md-3">
+							<h3>安全</h3>
+							<p>其实我是来到美国之后才开始接触安全方面的技术，研究重点也一直放在网页端的安全防护（包括用户隐私，XSS，CSRF）。这也是为什么，比起安全工程师，我还是首先想成为一名网页端的开发者，并将我所掌握的安全技术，灵活地运用到网站的建设中去。</p>
+						</div>
+					</div class="row">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
